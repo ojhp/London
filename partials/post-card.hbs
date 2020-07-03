@@ -13,6 +13,14 @@ For the rest, just output a smaller background image
     <a class="post-card-link" href="{{url}}">
         <div class="post-card-content">
             <h2 class="post-card-title">{{title}}</h2>
+            {{#if primary_tag}}
+            <p class="post-card-type">{{primary_tag.name}}</p>
+            {{/if}}
+            {{#unless feature_image}}
+            {{#if custom_excerpt}}
+            <p class="post-card-excerpt">{{excerpt}}</p>
+            {{/if}}
+            {{/unless}}
         </div>
     </a>
 </article>
