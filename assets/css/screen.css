@@ -254,6 +254,11 @@ body {
     opacity: 1;
 }
 
+.nav-social svg, .nav-feed svg {
+    margin-bottom: 0.44rem;
+    height: 1.8rem;
+}
+
 .rss-button svg {
     margin-bottom: 1px;
     height: 2.1rem;
