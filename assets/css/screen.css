@@ -474,20 +474,6 @@ body {
     opacity: 0.85;
 }
 
-/* Posts without images */
-.post-card.no-image:before {
-    display: block;
-    content: counter(posts);
-    position: absolute;
-    bottom: -0.15em;
-    right: 5vw;
-    font-size: 28vw;
-    line-height: 1em;
-    font-weight: var(--font-heavy);
-    letter-spacing: -0.1em;
-    color: rgba(0,0,0,0.2);
-}
-
 .post-card.no-image .post-card-content {
     justify-content: flex-start;
     align-items: flex-start;

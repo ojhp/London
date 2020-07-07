@@ -11,11 +11,12 @@
         <p class="post-content-excerpt">{{custom_excerpt}}</p>
     {{/if}}
 
-    {{#if feature_image}}
+    {{!-- Hiding feature image, so first image can be included with a caption --}}
+    {{!--{{#if feature_image}}
     <div class="post-content-image">
         <img class="kg-image" src="{{feature_image}}" alt="{{title}}" />
     </div>
-    {{/if}}
+    {{/if}}--}}
 
     <div class="post-content-body">
         {{content}}
@@ -30,6 +31,7 @@
     </section>
     {{/if}}
 
+    {{!--
     <footer class="post-content-footer">
 
         {{!-- There are two options for how we display the byline/author-info.
@@ -39,6 +41,7 @@
 
 
     </footer>
+    --}}
 
     {{!--
     <section class="post-content-comments">
