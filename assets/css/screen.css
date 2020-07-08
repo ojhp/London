@@ -19,6 +19,7 @@ production stylesheet in assets/built/screen.css using gulp dev
 @import "components/actions.css";
 @import "components/hamburger.css";
 @import "components/animations.css";
+@import "components/sharing-links.css";
 
 
 /* Main - Theme styles
@@ -529,7 +530,7 @@ body {
 .post-content {
     max-width: 720px;
     margin: 0 auto;
-    padding: 6vw 0;
+    padding: 6vw 0 0 0;
 }
 
 .post-content-header {
@@ -739,57 +740,4 @@ body {
 .page-template .post-content-body h2,
 .page-template .post-content-body h3 {
     text-align: center;
-}
-
-/* Sharing Links
-/* ---------------------------------------------------------- */
-
-.share-links {
-    display: inline-flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.share-link {
-    margin-left: 10px;
-    transition: 0.4s ease;
-    fill: var(--color-faded);
-}
-
-.share-link svg {
-    position: relative;
-    top: -0.2rem;
-    height: 2.6rem;
-}
-
-.share-link-facebook:hover {
-    fill: var(--color-facebook);
-}
-
-.share-link-twitter:hover {
-    fill: var(--color-twitter);
-}
-
-.share-link-whatsapp:hover {
-    fill: var(--color-whatsapp);
-}
-
-.share-link-email:hover {
-    fill: var(--color-email);
-}
-
-.share-link-whatsapp {
-    display: none;
-}
-
-@media (max-width: 850px) {
-    .share-link {
-        opacity: 1;
-        transition: none;
-    }
-
-    .share-link-whatsapp {
-        display: list-item;
-    }
 }
