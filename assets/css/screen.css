@@ -255,8 +255,9 @@ body {
 }
 
 .social-links svg {
-    margin-bottom: 0.44rem;
-    height: 1.8rem;
+    position: relative;
+    top: -0.2rem;
+    height: 2.2rem;
 }
 
 .rss-button svg {
@@ -354,7 +355,6 @@ body {
         margin-right: 20px;
     }
     .social-links svg {
-        margin-bottom: 0.6rem;
         height: 2.4rem;
     }
 
@@ -724,4 +724,61 @@ body {
 .page-template .post-content-body h2,
 .page-template .post-content-body h3 {
     text-align: center;
+}
+
+/* Sharing Links
+/* ---------------------------------------------------------- */
+
+.share-links {
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.share-link {
+    margin-left: 10px;
+    transition: 0.5s ease;
+    opacity: 0.65;
+}
+
+.share-link:hover {
+    opacity: 1;
+}
+
+.share-link svg {
+    position: relative;
+    top: -0.2rem;
+    height: 2.6rem;
+}
+
+.share-link-facebook svg {
+    fill: #3b5998;
+}
+
+.share-link-twitter svg {
+    fill: #1b95e0;
+}
+
+.share-link-whatsapp svg {
+    fill: #43d854;
+}
+
+.share-link-email svg {
+    fill: #555;
+}
+
+.share-link-whatsapp {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .share-link {
+        opacity: 1;
+        transition: none;
+    }
+
+    .share-link-whatsapp {
+        display: list-item;
+    }
 }

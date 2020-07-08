@@ -1,0 +1,25 @@
+<section class="share-link-section">
+    Share:
+    <ul class="share-links">
+        <li class="share-link share-link-facebook">
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{encode url absolute="true"}}" title="Share via Facebook" target="_blank" rel="noopener">
+                {{> icons/facebook}}
+            </a>
+        </li>
+        <li class="share-link share-link-twitter">
+            <a href="https://twitter.com/share?url={{encode url absolute="true"}}&text={{encode title}}" title="Share via Twitter" target="_blank" rel="noopener">
+                {{> icons/twitter}}
+            </a>
+        </li>
+        <li class="share-link share-link-whatsapp">
+            <a href="whatsapp://send?text={{encode url absolute="true"}}" title="Share via WhatsApp" target="_blank" rel="noopener">
+                {{> icons/whatsapp}}
+            </a>
+        </li>
+        <li class="share-link share-link-email">
+            <a href="mailto:?body={{encode url absolute="true"}}&subject={{encode title}}" title="Share via Email" target="_blank" rel="noopener">
+                {{> icons/envelope}}
+            </a>
+        </li>
+    </ul>
+</section>
