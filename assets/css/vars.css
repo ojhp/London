@@ -8,6 +8,7 @@
     /* Colours */
     --color-primary: #3eb0ef;
     --color-base: #131313;
+    --color-faded: #acacac;
     --color-border: #ddd;
     --color-bg: #f8f8f8;
 
@@ -31,5 +32,12 @@
     --height: 4rem;
     --margin: 2rem;
     --radius: 0.5rem;
+
+    /* Social Media Colors */
+    --color-facebook: #3b5998;
+    --color-twitter: #1b95e0;
+    --color-whatsapp: #43d854;
+    --color-email: #555;
+    --color-rss: #f26522;
 
 }

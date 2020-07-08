@@ -175,15 +175,14 @@ body {
     display: block;
     margin: 0;
     padding: 10px 12px;
-    color: var(--color-base);
+    color: var(--color-faded);
     font-weight: 600;
-    opacity: 0.4;
 }
 
 .nav-current a,
 .site-head a:hover {
     text-decoration: none;
-    opacity: 1;
+    color: var(--color-base);
 }
 
 .site-head-center {
@@ -258,6 +257,22 @@ body {
     position: relative;
     top: -0.2rem;
     height: 2.2rem;
+}
+
+.social-links a {
+    fill: var(--color-faded);
+}
+
+.nav-facebook a:hover {
+    fill: var(--color-facebook);
+}
+
+.nav-twitter a:hover {
+    fill: var(--color-twitter);
+}
+
+.nav-feed a:hover {
+    fill: var(--color-rss);
 }
 
 .rss-button svg {
@@ -738,12 +753,8 @@ body {
 
 .share-link {
     margin-left: 10px;
-    transition: 0.5s ease;
-    opacity: 0.65;
-}
-
-.share-link:hover {
-    opacity: 1;
+    transition: 0.4s ease;
+    fill: var(--color-faded);
 }
 
 .share-link svg {
@@ -752,20 +763,20 @@ body {
     height: 2.6rem;
 }
 
-.share-link-facebook svg {
-    fill: #3b5998;
+.share-link-facebook:hover {
+    fill: var(--color-facebook);
 }
 
-.share-link-twitter svg {
-    fill: #1b95e0;
+.share-link-twitter:hover {
+    fill: var(--color-twitter);
 }
 
-.share-link-whatsapp svg {
-    fill: #43d854;
+.share-link-whatsapp:hover {
+    fill: var(--color-whatsapp);
 }
 
-.share-link-email svg {
-    fill: #555;
+.share-link-email:hover {
+    fill: var(--color-email);
 }
 
 .share-link-whatsapp {
